@@ -1,0 +1,127 @@
+/* GLOBALNE STYLIZACJE I WYŚRODKOWANIE ZA POMOCĄ FLEXBOX */
+body {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie w poziomie */
+    align-items: center;     /* Wyśrodkowanie w pionie */
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8; /* Jasne, łagodne tło */
+   
+}
+
+/* STYLIZACJA GŁÓWNEGO KONTENERA */
+.card-container {
+    max-width: 600px;
+    padding: 60px;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15); /* Ładny cień */
+    text-align: center;
+    
+    /* Mała animacja unoszenia (opcjonalnie) */
+    transition: transform 0.3s ease;
+}
+.card-container:hover {
+    transform: translateY(-5px);
+}
+
+h1 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+}
+
+p {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+}
+
+/* ------------------------------------------- */
+/* ROZMIESZCZENIE PRZYCISKÓW (KLUCZOWY PUNKT) */
+/* ------------------------------------------- */
+.button-group {
+    display: flex;
+    justify-content: center; /* Wyśrodkowanie grupy przycisków */
+    gap: 20px; /* RÓWNA PRZESTRZEŃ (MARGINES) MIĘDZY PRZYCISKAMI */
+    margin-top: 800px;
+
+    margin-left: 400px;
+}
+
+/* STYLIZACJA PRZYCISKÓW */
+.styled-button {
+    /* KLUCZOWY PUNKT: RÓWNY PADDING */
+    padding: 15px 30px; 
+    
+    border: none;
+    border-radius: 8px;
+    font-size: 26px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.1s;
+}
+
+/* PRZYCISK GŁÓWNY */
+.primary {
+    background-color: #3498db; /* Niebieski */
+    color: white;
+}
+.primary:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* PRZYCISK POMOCNICZY */
+.secondary {
+    background-color: white;
+    color: #3498db;
+    border: 2px solid #3498db; /* Konturowa ramka */
+}
+.secondary:hover {
+    background-color: #ecf0f1;
+    transform: translateY(-2px);
+}
+/* Убедитесь, что стили применены ко всему документу */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+    font-family: Arial, sans-serif;
+}
+
+/* Стилизация основной кнопки-ссылки */
+.animated-button {
+    /* Визуальные стили */
+    background-color: #3498db; /* Синий цвет */
+    color: white;
+    padding: 15px 30px;
+    font-size: 18px;
+    text-decoration: none; /* Убираем подчеркивание */
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+    /* Настройки анимации */
+    transition: all 0.3s ease; /* Плавный переход для всех свойств */
+    transform: scale(1); /* Изначальный размер */
+    display: inline-block; /* Для корректного применения трансформаций */
+}
+
+/* Анимация при наведении (Hover Effect) */
+.animated-button:hover {
+    background-color: #2980b9; /* Цвет темнеет */
+    transform: scale(1.05) translateY(-2px); /* Кнопка немного увеличивается и "подпрыгивает" */
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Тень становится выраженнее */
+}
+
+/* Эффект при активном нажатии (Click/Active State) */
+.animated-button:active {
+    background-color: #1a608e; /* Цвет становится еще темнее */
+    transform: scale(0.98); /* Кнопка немного "вдавливается" */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); 
+}
+/* Upewnij się, że style są zastosowane do całego dokumentu */
